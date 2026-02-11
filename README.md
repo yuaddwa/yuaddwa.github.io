@@ -1,2 +1,0 @@
-# yuaddwa.github.io
-.
