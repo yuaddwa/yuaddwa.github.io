@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+    <style>
+    /* 顶部导航栏样式 */
+    .navbar {
+      background-color: #ccc; /* 灰色背景 */
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .navbar1 {
+      height: 20px;
+      background-color: #FF0000; /* 灰色背景 */
+      padding: 15px 20px;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 60px;
+    }
+    .navbar h1 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 1.8em;
+      color: #FFF;
+      font-family: '楷体';
+    }
+
+    .navbar1 a {
+      text-decoration: none;
+      color: #FFFFFF;
+      font-weight: bold;
+    }
+
+    .navbar1 a:hover {
+      color: #000000;
+    }
+    .form {
+      padding: 100px;
+      margin:100px  0 auto auto; 
+      background-color: #fffefe;
+      width: 300px;
+    }
+    .container666 {
+      background-color: aqua;
+      height: 100vh;
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+      <!-- 顶部导航栏 -->
+  <div class="navbar">
+    <h1>Tlias智能学习辅助系统</h1>
+    <div class="navbar1"><a href="#">退出登录</a></div>
+  </div>
+  <div class="container666">
+    <form action="/save" method="post" class="form">
+    <div>
+        <label for="">用户名</label>
+        <input type="text" name="username" id="username"></input>     
+    </div>
+    <div>
+        <label for="">性别</label>
+        <input type="radio" name="sex" id="sex" value="male" checked>男
+        <input type="radio" name="sex" id="sex" value="female">女
+    </div>
+    <div>
+        <select name="1" id="1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="">密码</label>
+        <input type="password" name="password" id="password"></input>
+    </div>
+    <div>
+        <button type="submit">登录</button>
+    </div>
+    <!-- 帮我完善页面 -->
+     <div>
+        <a href="/register">注册</a>
+    </div>
+    <div>
+        <a href="/forget">忘记密码</a>
+    </div>
+  </form>
+  </div>
+</body>
+</html>
